@@ -1,0 +1,112 @@
+.topbar-wrapper {
+    display: block;
+    position: relative;
+    background-color: black;
+    border-top: none;
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+.topbar-box {
+    display: flex;
+    justify-content: center;
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+
+.navbar-wrapper {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    max-width: 1192px;
+    margin:0 64px;
+    padding:0;
+    box-sizing: inherit;
+}
+.navbar-box {
+    display: flex;
+    height: 54px;
+    align-items: center;
+    overflow: hidden;
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+
+.logo-wrapper {
+    display:block;
+    flex: 0 0 auto;
+    margin:0;
+    margin-right: 40px;
+    padding:0;
+    box-sizing: inherit;
+}
+.logo-box {
+    display: block;
+    width: 163px;
+    height: 29px;
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+.logo-box p {
+    display: block;
+    vertical-alignment: middle;
+    font-size: 25px;
+    color: white;
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+
+.navitems-wrapper {
+    display: block;
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+.navitems-box {
+    display: block;
+    flex: 0 1 auto;
+    overflow: auto;
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+.navitems-list {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    //align-items: flex-start;
+    overflow-x: auto;
+    line-height: 40px;
+    line-style: none;
+    line-style-type: none;
+    white-space: nowrap;
+    line-style-position: initial;
+    line-style-image: none;
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+.nav-item {
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+    margin:0;
+    margin-right: 25px;
+    padding:0;
+    box-sizing: inherit;
+}
+.nav-link {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.nav-link:hover {
+    color: #dddddd;
+}

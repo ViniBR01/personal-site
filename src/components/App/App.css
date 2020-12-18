@@ -11,7 +11,8 @@
 
 .App-main {
     background-color: #eeeeee;
-    min-height: 85vh;
+    height: 85vh;
+    min-height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +23,8 @@
 
 .App-footer {
     background-color: #282c34;
-    min-height: 5vh;
+    height: 5vh;
+    min-height: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
