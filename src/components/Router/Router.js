@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
     BrowserRouter as Router,
     Switch,
@@ -7,9 +7,29 @@ import {
 import NavBar from '../NavBar/NavBar';
 
 function SiteRouter() {
+    const [dimensions, setDimensions] = useState({
+        height: window.innerHeight,
+        width: window.innerWidth
+    });
+    
+    useEffect(() => {
+        const debouncedHandleResize = debounce(function handleResize() {
+            setDimensions({
+                height: window.innerHeight,
+                width: window.innerWidth
+            });
+        }, 100);
+        
+        window.addEventListener("resize", debouncedHandleResize);
+        
+        return _ => {
+            window.removeEventListener("resize", debouncedHandleResize);
+        };
+    });
+
     return (
         <Router>
-            <NavBar />
+            <NavBar windowDimension={dimensions.width} />
             <Switch>
                 <Route exact path="/">
                     Home page!
@@ -37,4 +57,15 @@ function SiteRouter() {
     );
 }
 
-export default SiteRouter;
+function debounce(fn, ms) {
+  let timer;
+  return _ => {
+    clearTimeout(timer);
+    timer = setTimeout(_ => {
+      timer = null;
+      fn.apply(this, arguments);
+    }, ms);
+  };
+}
+
+        export default SiteRouter;

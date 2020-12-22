@@ -110,3 +110,32 @@
 .nav-link:hover {
     color: #dddddd;
 }
+
+.navitemsmobile-wrapper {
+    display: flex;
+    height: 54px;
+    width: 54px;
+    margin:0;
+    margin-left: auto;
+    padding:0;
+    align-items: center;
+    box-sizing: inherit;
+}
+.navitemsmobile-box {
+    display: block;
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+.navitemsmobile-button {
+    width: 36px;
+    height: 36px;
+    margin: auto 0;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    background-color: white;
+    background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+    background-size: 100%;
+}
