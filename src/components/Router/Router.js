@@ -18,7 +18,7 @@ function SiteRouter() {
                 height: window.innerHeight,
                 width: window.innerWidth
             });
-        }, 100);
+        }, 30);
         
         window.addEventListener("resize", debouncedHandleResize);
         
@@ -68,4 +68,4 @@ function debounce(fn, ms) {
   };
 }
 
-        export default SiteRouter;
+export default SiteRouter;

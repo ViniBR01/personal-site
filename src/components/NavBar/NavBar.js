@@ -17,7 +17,8 @@ class NavBar extends React.Component {
         let NavBarContent;
         if (isMobile) {
             NavBarContent = (
-                
+
+
                 <div className="topbar-wrapper">
                     <div className="topbar-box">
                         <div className="navbar-wrapper">
@@ -30,16 +31,56 @@ class NavBar extends React.Component {
                                 </div>
                                 
                                 <div className="navitemsmobile-wrapper">
-                                    <nav className="navitemsmobile-box">
-                                        <button className="navitemsmobile-button" type="button" onClick={logmessage}>
-                                            
-                                        </button>
-                                        
-                                    </nav>
+                                    
+                                    <button className="navitemsmobile-button" type="button" onClick={logmessage}></button>
+                                    
+                                    
                                 </div>
                                 
                             </div>
                         </div>
+
+
+
+
+
+
+
+                        <nav className="navitemsmobile-box">
+                            
+                            <ul>
+                                <li>
+                                    <NavLink exact className="navmobile-link" to="/">Hello</NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink exact className="navmobile-link" to="/about">About me</NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink exact className="navmobile-link" to="/projects">Projects</NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink exact className="navmobile-link" to="/photos">Photos</NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink exact className="navmobile-link" to="/blog">Blog</NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink exact className="navmobile-link" to="/contact">Contact</NavLink>
+                                </li>
+                            </ul>
+                            
+                        </nav>
+
+
+
+
+
+
+
+                        
+
+
+                        
                     </div>
                 </div>
             );
