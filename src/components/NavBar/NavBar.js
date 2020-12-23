@@ -8,6 +8,7 @@ class NavBar extends React.Component {
     constructor(props) {
         super(props);
         this.clickHamburguer = this.clickHamburguer.bind(this);
+        this.closeHamburguer = this.closeHamburguer.bind(this);
         this.state = {
             hamburguerButton: false
         };
@@ -20,6 +21,12 @@ class NavBar extends React.Component {
             hamburguerButton: !state.hamburguerButton
         }));
     }
+
+    closeHamburguer() {
+        this.setState({
+            hamburguerButton: false
+        });
+    }
     
     render() {
         /* Condition the nav bar content on the screen size and on the button state */
@@ -29,7 +36,7 @@ class NavBar extends React.Component {
             NavBarContent = (
                 <nav className="navbar-mobile">
                     <div className="navbar-mobile-container">
-                        <NavLink exact to="/" className="navbar-logo">
+                        <NavLink exact to="/" className="navbar-logo" onClick={this.closeHamburguer}>
                             <FaWifi className="navbar-logo-icon" />
                             Vini Da Silva
                         </NavLink>
@@ -79,32 +86,32 @@ class NavBar extends React.Component {
                 <nav className="navbar-mobile-menu">
                     <ul>
                         <li>
-                            <NavLink exact to="/" onClick={this.clickHamburguer}>
+                            <NavLink exact to="/" onClick={this.closeHamburguer}>
                                 Home
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink exact to="/about" onClick={this.clickHamburguer}>
+                            <NavLink exact to="/about" onClick={this.closeHamburguer}>
                                 About me
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink exact to="/projects" onClick={this.clickHamburguer}>
+                            <NavLink exact to="/projects" onClick={this.closeHamburguer}>
                                 Projects
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink exact to="/photos" onClick={this.clickHamburguer}>
+                            <NavLink exact to="/photos" onClick={this.closeHamburguer}>
                                 Photos
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink exact to="/blog" onClick={this.clickHamburguer}>
+                            <NavLink exact to="/blog" onClick={this.closeHamburguer}>
                                 Blog
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink exact to="/contact" onClick={this.clickHamburguer}>
+                            <NavLink exact to="/contact" onClick={this.closeHamburguer}>
                                 Contact
                             </NavLink>
                         </li>
