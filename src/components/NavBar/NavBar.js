@@ -1,7 +1,7 @@
 import React from 'react';
 import './NavBar.css';
 import { NavLink } from 'react-router-dom';
-
+import { FaBars, FaTimes, FaWifi } from 'react-icons/fa'
 
 class NavBar extends React.Component {
     /* Initialize the state */
@@ -13,76 +13,112 @@ class NavBar extends React.Component {
         };
     }
 
-    clickHamburguer(e) {
-        e.preventDefault();
-        console.log('The link was clicked.');
+    clickHamburguer() {
+        //e.preventDefault();
+        //console.log('The link was clicked. Current state = ', this.state.hamburguerButton);
+        this.setState((state, props) => ({
+            hamburguerButton: !state.hamburguerButton
+        }));
     }
     
     render() {
-        //console.log(this.props.windowDimension);
+        /* Condition the nav bar content on the screen size and on the button state */
         const isMobile = this.props.windowWidth <= 810;
-        let NavBarContent;
+        let NavBarContent;        
         if (isMobile) {
             NavBarContent = (
-                    <nav className="navbar-mobile">
-                        <div className="navbar-mobile-container">
-                            <NavLink exact to="/" className="navbar-logo">
-                                Vini Da Silva
-                            </NavLink>
-                            <div className="navbar-button">
-                                <i className={hamburguerClick ? }
-                            </div>
+                <nav className="navbar-mobile">
+                    <div className="navbar-mobile-container">
+                        <NavLink exact to="/" className="navbar-logo">
+                            <FaWifi className="navbar-logo-icon" />
+                            Vini Da Silva
+                        </NavLink>
+                        <div className="navbar-button" onClick={this.clickHamburguer}>
+                            {this.state.hamburguerButton ? <FaTimes /> : <FaBars />}
                         </div>
-                    </nav>        
+                    </div>
+                </nav>        
             );
         } else {
             NavBarContent = (
-                <div className="topbar-box">
-                    <div className="navbar-wrapper">
-                        <div className="navbar-box">
-                            
-                            <div className="logo-wrapper">
-                                <div className="logo-box">
-                                    <p className="logo">Vini Da Silva</p>
-                                </div>
-                            </div>
-                            
-                            <div className="navitems-wrapper">
-                                <nav className="navitems-box">
-                                    
-                                    <ul className="navitems-list">
-                                        <li className="nav-item">
-                                            <NavLink exact className="nav-link" to="/">Home</NavLink>
-                                        </li>
-                                        <li className="nav-item">
-                                            <NavLink exact className="nav-link" to="/about">About me</NavLink>
-                                        </li>
-                                        <li className="nav-item">
-                                            <NavLink exact className="nav-link" to="/projects">Projects</NavLink>
-                                        </li>
-                                        <li className="nav-item">
-                                            <NavLink exact className="nav-link" to="/photos">Photos</NavLink>
-                                        </li>
-                                        <li className="nav-item">
-                                            <NavLink exact className="nav-link" to="/blog">Blog</NavLink>
-                                        </li>
-                                        <li className="nav-item">
-                                            <NavLink exact className="nav-link" to="/contact">Contact</NavLink>
-                                        </li>
-                                    </ul>
-                                    
-                                </nav>
-                            </div>
-                        </div>
+                <nav className="navbar-desktop">
+                    <div className="navbar-desktop-container">
+                        <NavLink exact to="/" className="navbar-logo">
+                            <FaWifi className="navbar-logo-icon" />
+                            Vini Da Silva
+                        </NavLink>
+                        <ul>
+                            <li>
+                                <NavLink exact to="/">Home</NavLink>
+                            </li>
+                            <li>
+                                <NavLink exact to="/about">About me</NavLink>
+                            </li>
+                            <li>
+                                <NavLink exact to="/projects">Projects</NavLink>
+                            </li>
+                            <li>
+                                <NavLink exact to="/photos">Photos</NavLink>
+                            </li>
+                            <li>
+                                <NavLink exact to="/blog">Blog</NavLink>
+                            </li>
+                            <li>
+                                <NavLink exact to="/contact">Contact</NavLink>
+                            </li>
+                        </ul>
                     </div>
-                </div>
+                </nav>       
                 
-            );
+            )
         }
-        
+
+        let MobileMenu;
+        if (this.state.hamburguerButton && isMobile) {
+            MobileMenu = (
+                <nav className="navbar-mobile-menu">
+                    <ul>
+                        <li>
+                            <NavLink exact to="/" onClick={this.clickHamburguer}>
+                                Home
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink exact to="/about" onClick={this.clickHamburguer}>
+                                About me
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink exact to="/projects" onClick={this.clickHamburguer}>
+                                Projects
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink exact to="/photos" onClick={this.clickHamburguer}>
+                                Photos
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink exact to="/blog" onClick={this.clickHamburguer}>
+                                Blog
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink exact to="/contact" onClick={this.clickHamburguer}>
+                                Contact
+                            </NavLink>
+                        </li>
+                    </ul>
+                </nav>
+            )
+        } else {
+            MobileMenu = null;
+        }
+
         return (
             <div className="topbar-wrapper">
                 { NavBarContent }
+                { MobileMenu }
             </div>
             
         );

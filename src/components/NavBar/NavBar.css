@@ -1,176 +1,99 @@
 .topbar-wrapper {
-    display: block;
-    position: relative;
-    background-color: black;
-    border-top: none;
-    margin:0;
-    padding:0;
-    box-sizing: inherit;
+	background: #1c2237;
+	display: block;
+	font-size: 1.3rem;
+	height: 80px;
+	min-width: 340px;
 }
-.topbar-box {
-    display: flex;
-    justify-content: center;
-    margin:0;
-    padding:0;
-    box-sizing: inherit;
+.navbar-mobile {
+	height: 100%;
+	width: 100%;
 }
-
-.navbar-wrapper {
-    display: block;
-    width: 100%;
-    min-width: 0;
-    max-width: 1192px;
-    margin:0 64px;
-    padding:0;
-    box-sizing: inherit;
+.navbar-mobile-container {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	height: 100%;
+	justify-content: space-between;
+	padding: 0 30px;
 }
-.navbar-box {
-    display: flex;
-    height: 54px;
-    align-items: center;
-    overflow: hidden;
-    margin:0;
-    padding:0;
-    box-sizing: inherit;
+.navbar-button {
+	color: #ffffff;
+	cursor: pointer;
+	display: flex;
+	font-size: 1.8rem;
+	justify-self: end;
 }
-
-.logo-wrapper {
-    display:block;
-    flex: 0 0 auto;
-    margin:0;
-    margin-right: 40px;
-    padding:0;
-    box-sizing: inherit;
+.navbar-mobile-menu ul {
+	background: #1c2237;
+	padding-bottom: 10px;
+	position: relative;
+	z-index: 10;
 }
-.logo-box {
-    display: block;
-    width: 163px;
-    height: 29px;
-    margin:0;
-    padding:0;
-    box-sizing: inherit;
+.navbar-mobile-menu li {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	height: 50px;
 }
-.logo-box p {
-    display: block;
-    vertical-alignment: middle;
-    font-size: 25px;
-    color: white;
-    margin:0;
-    padding:0;
-    box-sizing: inherit;
+.navbar-mobile-menu li a{
+	color: #ffffff;
+	text-decoration: none;
+	white-space: nowrap;
+}
+.navbar-mobile-menu li a:hover{
+	color: #ff0000;
+	text-decoration: underline;
 }
 
-.navitems-wrapper {
-    display: block;
-    margin:0;
-    padding:0;
-    box-sizing: inherit;
+
+
+
+.navbar-desktop {
+	height: 100%;
+	width: 100%;
 }
-.navitems-box {
-    display: block;
-    flex: 0 1 auto;
-    overflow: auto;
-    margin:0;
-    padding:0;
-    box-sizing: inherit;
+.navbar-desktop-container {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	height: 100%;
+	padding: 0 30px;
 }
-.navitems-list {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    //align-items: flex-start;
-    overflow-x: auto;
-    line-height: 40px;
-    line-style: none;
-    line-style-type: none;
-    white-space: nowrap;
-    line-style-position: initial;
-    line-style-image: none;
-    margin:0;
-    padding:0;
-    box-sizing: inherit;
+.navbar-desktop-container ul{
+	align-items: center;
+	display: flex;
+	list-style: none;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
 }
-.nav-item {
-    display: flex;
-    align-items: center;
-    line-height: 20px;
-    margin:0;
-    margin-right: 25px;
-    padding:0;
-    box-sizing: inherit;
+.navbar-desktop-container li a{
+	color: #ffffff;
+	text-decoration: none;
+	white-space: nowrap;
+	padding-left: 20px;
 }
-.nav-link {
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-}
-.nav-link:hover {
-    color: #dddddd;
+.navbar-desktop-container li a:hover{
+	color: #ff0000;
+	text-decoration: underline;
 }
 
-.navitemsmobile-wrapper {
-    display: flex;
-    height: 54px;
-    width: 54px;
-    margin:0;
-    margin-left: auto;
-    padding:0;
-    align-items: center;
-    box-sizing: inherit;
+
+.navbar-logo {
+	align-items: center;
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 2rem;
+	justify-self: start;
+	text-decoration: none;
+	white-space: nowrap;
 }
-.navitemsmobile-box {
-    display: block;
-    margin:0;
-    padding:0;
-    box-sizing: inherit;
-}
-.navitemsmobile-button {
-    width: 36px;
-    height: 36px;
-    margin: auto 0;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    cursor: pointer;
-    background-color: white;
-    background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
-    background-size: 100%;
-}
-.navitemsmobile-box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: black;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    color: white;
-    /* hide the menu above the screen by default */
-    transform: translateY(-100%);
-    /* transition adds a little animation when sliding in and out the menu */
-    transition: transform 0.2s ease;
-}
-.navitemsmobile-box ul {
-    width: 100%;
-    height: 50%;
-    list-style: none;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.navitemsmobile-box ul li a {
-    color: white;
-    padding-bottom: 10px;
-    border-bottom: 2px solid black;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2rem;
-}
-.showmobileNav {
-    /* show the menu */
-    transform: translateY(0);
+.navbar-logo-icon {
+	margin-right: 0.5rem;
 }
