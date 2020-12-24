@@ -22,16 +22,32 @@ class Footer extends React.Component {
                 <small className='website-rights'>Vini Da Silva © 2020</small>
 
                 <div className="social-media">
-                    <a className='social-icon-link' target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/vini-goncalves/">
+                    <a className='social-icon-link linkedin-icon'
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       href="https://www.linkedin.com/in/vini-goncalves/"
+                    >
                         <FaLinkedin />
                     </a>
-                    <a className='social-icon-link' target="_blank" rel="noopener noreferrer" href="https://github.com/ViniBR01">
+                    <a className='social-icon-link github-icon'
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       href="https://github.com/ViniBR01"
+                    >
                         <FaGithub />
                     </a>
-                    <a className='social-icon-link' target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/vgoncalves29">
+                    <a className='social-icon-link facebook-icon'
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       href="https://www.facebook.com/vgoncalves29"
+                    >
                         <FaFacebook />
                     </a>
-                    <a className='social-icon-link' target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCuWu3CcWPARJzqw3v7mXUxw">
+                    <a className='social-icon-link youtube-icon'
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       href="https://www.youtube.com/channel/UCuWu3CcWPARJzqw3v7mXUxw"
+                    >
                         <FaYoutube />
                     </a>
                 </div>
