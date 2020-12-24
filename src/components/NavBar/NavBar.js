@@ -30,7 +30,7 @@ class NavBar extends React.Component {
     
     render() {
         /* Condition the nav bar content on the screen size and on the button state */
-        const isMobile = this.props.windowWidth <= 810;
+        const isMobile = this.props.windowWidth <= 850;
         let NavBarContent;        
         if (isMobile) {
             NavBarContent = (
@@ -65,7 +65,7 @@ class NavBar extends React.Component {
                                 <NavLink exact to="/projects">Projects</NavLink>
                             </li>
                             <li>
-                                <NavLink exact to="/photos">Photos</NavLink>
+                                <NavLink exact to="/hobbies">Hobbies</NavLink>
                             </li>
                             <li>
                                 <NavLink exact to="/blog">Blog</NavLink>
@@ -101,8 +101,8 @@ class NavBar extends React.Component {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink exact to="/photos" onClick={this.closeHamburguer}>
-                                Photos
+                            <NavLink exact to="/hobbies" onClick={this.closeHamburguer}>
+                                Hobbies
                             </NavLink>
                         </li>
                         <li>

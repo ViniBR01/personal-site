@@ -48,7 +48,7 @@ class App extends React.Component {
                         <Route exact path="/projects">
                             Projects!
                         </Route>
-                        <Route exact path="/photos">
+                        <Route exact path="/hobbies">
                             Photography!
                         </Route>
                         <Route exact path="/blog">
