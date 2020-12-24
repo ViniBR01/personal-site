@@ -1,0 +1,39 @@
+.footer-container {
+    align-items: center;
+    background-color: #1c2237;
+    color: #ffffff;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    margin: 40px auto 0 auto;
+    padding: 0 30px;
+    width: 100%;
+}
+
+.footer-logo {
+}
+.footer-logo-icon {
+}
+
+.website-rights {
+}
+
+.social-media {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+}
+.social-media a {
+    align-items: center;
+    display: flex;
+}
+.social-media a:hover {
+    color: green;
+}
+
+.social-icon-link {
+    color: #fff;
+    font-size: 32px;
+}

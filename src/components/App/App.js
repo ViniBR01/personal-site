@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
+import Footer from '../Footer/Footer';
 
 class App extends React.Component {
     /* Initialize the state */
@@ -32,15 +33,17 @@ class App extends React.Component {
     
     render() {
         return (
-            <div>
+            <div className="page-container">
                 <BrowserRouter>
                     <NavBar windowWidth={this.state.width} />
                     <Switch>                        
                         <Route exact path="/">
-                            Home page!
-                            <h1>Hello, world!</h1>
-                            <h3>height: {this.state.height}px</h3>
-                            <h3>width: {this.state.width}px</h3>
+                            <div className="main-content">
+                                Home page!
+                                <h1>Hello, world!</h1>
+                                <h3>height: {this.state.height}px</h3>
+                                <h3>width: {this.state.width}px</h3>
+                            </div>
                         </Route>
                         <Route exact path="/about">
                             About me!
@@ -61,9 +64,7 @@ class App extends React.Component {
                             404 Not Found!
                         </Route>
                     </Switch>
-                    <div>
-                        Footer content
-                    </div>
+                    <Footer />
                 </BrowserRouter>
             </div>
         );
