@@ -46,27 +46,39 @@ class App extends React.Component {
                             </div>
                         </Route>
                         <Route exact path="/about">
-                            About me!
+                            <div className="main-content">
+                                About me!
+                            </div>
                         </Route>
                         <Route exact path="/projects">
-                            Projects!
+                            <div className="main-content">
+                                Projects!
+                            </div>
                         </Route>
                         <Route exact path="/hobbies">
-                            Photography!
+                            <div className="main-content">
+                                Photography!
+                            </div>
                         </Route>
                         <Route exact path="/blog">
-                            My Blog!
+                            <div className="main-content">
+                                My Blog!
+                            </div>
                         </Route>
                         <Route exact path="/contact">
-                            Contact me!
+                            <div className="main-content">
+                                Contact me!
+                            </div>
                         </Route>
                         <Route path="*">
-                            404 Not Found!
+                            <div className="main-content">
+                                404 Not Found!
+                            </div>
                         </Route>
                     </Switch>
                     <Footer />
                 </BrowserRouter>
-            </div>
+                            </div>
         );
     }
 }
