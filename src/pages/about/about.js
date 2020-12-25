@@ -7,7 +7,7 @@ function About() {
     return (
         <div className="page-wrapper">
             <div className="title" >
-                <p1><b>About Me</b></p1>
+                <h1>About Me</h1>
             </div>
 
             <div className="image-wrapper" >
@@ -15,9 +15,9 @@ function About() {
             </div>
 
             <div className="page-text" >
-                <p2>My name is Vinicius da Silva</p2>
+                <h2>My name is Vinicius da Silva</h2>
                 
-                <p3>I'm an Electrical & Computer Engineer and a Developer from Brazil.</p3>
+                <h3>I'm an Electrical & Computer Engineer and a Developer from Brazil.</h3>
                 <p>Currently I'm based in Houston-TX, where I'm working towards a PhD at Rice University.</p>
                 <p>My research focuses on wireless communications and, more specifically, on the performance of multi-user transmissions in the next generation WLAN technologies.</p>
             </div>
