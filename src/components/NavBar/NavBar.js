@@ -68,7 +68,12 @@ class NavBar extends React.Component {
                                 <NavLink exact to="/hobbies">Hobbies</NavLink>
                             </li>
                             <li>
-                                <NavLink exact to="/blog">Blog</NavLink>
+                                <a target="_blank"
+                                   rel="noopener noreferrer"
+                                   href="https://nextjs-blog.vinibr01.vercel.app/"
+                                >
+                                    Blog
+                                </a>
                             </li>
                             <li>
                                 <NavLink exact to="/contact">Contact</NavLink>
@@ -106,9 +111,13 @@ class NavBar extends React.Component {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink exact to="/blog" onClick={this.closeHamburguer}>
+                            <a target="_blank"
+                               rel="noopener noreferrer"
+                               href="https://nextjs-blog.vinibr01.vercel.app/"
+                               onClick={this.closeHamburguer}
+                            >
                                 Blog
-                            </NavLink>
+                            </a>
                         </li>
                         <li>
                             <NavLink exact to="/contact" onClick={this.closeHamburguer}>
