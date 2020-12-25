@@ -40,10 +40,12 @@ class App extends React.Component {
                     <Switch>                        
                         <Route exact path="/">
                             <div className="main-content">
-                                Home page!
-                                <h1>Hello, world!</h1>
-                                <h3>height: {this.state.height}px</h3>
-                                <h3>width: {this.state.width}px</h3>
+                                <h1>HELLO! I'm Vini</h1>
+                                <h3>Welcome to my website</h3>
+                                <p>I'm an engineer, researcher and developer.</p>
+                                <p>--------</p>
+                                <p>height: {this.state.height}px</p>
+                                <p>width: {this.state.width}px</p>
                             </div>
                         </Route>
                         <Route exact path="/about">
@@ -53,12 +55,31 @@ class App extends React.Component {
                         </Route>
                         <Route exact path="/projects">
                             <div className="main-content">
-                                Projects!
+                                <h1>Projects</h1>
+                                <ul>
+                                    <li>PERFORM Emulation Platform</li>
+                                    <li>Internet Backlog estimation via RNNs</li>
+                                    <li>Personal Website</li>
+                                    <li>Network Model for music authorship estimator</li>
+                                    <li>Covid-19 seasonality project</li>
+                                    <li>Blog in Next.JS</li>
+                                    <li>Reliable File Transfer Protocol</li>
+                                    <li>Loteria! Mexican Game</li>
+                                    <li>Intra-Domain Routing Protocols</li>
+                                    <li>Analysis of Magma's Performance</li>
+                                </ul>
+                                
                             </div>
                         </Route>
                         <Route exact path="/hobbies">
                             <div className="main-content">
-                                Photography!
+                                <h1>Hobbies</h1>
+                                <ul>
+                                    <li>Photography</li>
+                                    <li>Baking and Cooking</li>
+                                    <li>Biking</li>
+                                    <li>Online Gaming</li>
+                                </ul>
                             </div>
                         </Route>
                         <Route exact path="/blog">
@@ -79,7 +100,7 @@ class App extends React.Component {
                     </Switch>
                     <Footer />
                 </BrowserRouter>
-                            </div>
+            </div>
         );
     }
 }
