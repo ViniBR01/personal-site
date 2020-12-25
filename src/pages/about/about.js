@@ -63,7 +63,7 @@ function About() {
             </div>
 
             <div className="button-wrapper" >
-                <button>Download Resume</button>
+                <a href="./assets/Resume-Vini-2020.pdf" download>Download Resume</a>
             </div>
         </div>
     );

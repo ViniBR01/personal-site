@@ -38,6 +38,7 @@
     border-radius: 5px;
     grid-area: text2;
     margin: 20px;
+    margin-bottom: 35px;
     padding: 25px 45px;
 }
 .main-list {
@@ -52,15 +53,19 @@
 }
 .button-wrapper {
     grid-area: button;
-    margin-top: 30px;
+    margin: 10px 0;
     text-align: center;
 }
-.button-wrapper button {
+.button-wrapper a {
     background-color: #1c2237;
     border-radius: 5px;
     color: white;
     font-size: 2rem;
     padding: 10px;
+    text-decoration: none;
+}
+.button-wrapper a:hover {
+    background-color: #6c7287;
 }
 
 p, p1, p2, p3 {
