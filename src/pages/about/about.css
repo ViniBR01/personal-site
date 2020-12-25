@@ -1,0 +1,111 @@
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 80px 1fr auto auto;
+    grid-template-areas:
+        "header header"
+            "image text1"
+            "text2 text2"
+            "button button";
+    margin: 0 auto;
+    max-width: 1050px;
+}
+.title {
+    align-items: flex-end;
+    display: flex;
+    grid-area: header;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+.image-wrapper {
+    grid-area: image;
+    margin: 20px;
+}
+.img-profile {
+    border-radius: 20px;
+    height: auto;/*531px;*/
+    width: 380px;/*610px;*/
+}
+.page-text {
+    display: flex;
+    flex-direction: column;
+    grid-area: text1;
+    justify-content: flex-start;
+    margin: 20px;
+}
+.box-text {
+    border: 3px solid #1c2237;
+    border-radius: 5px;
+    grid-area: text2;
+    margin: 20px;
+    padding: 25px 45px;
+}
+.main-list {
+    list-style: none;
+}
+.main-list > li {
+    font-weight: bold;
+}
+.main-list > li > ul {
+    font-weight: normal;
+    padding-left: 25px;
+}
+.button-wrapper {
+    grid-area: button;
+    margin-top: 30px;
+    text-align: center;
+}
+.button-wrapper button {
+    background-color: #1c2237;
+    border-radius: 5px;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+p, p1, p2, p3 {
+}
+p1 {
+    font-size: 3rem;
+}
+p2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+p3 {
+    margin: 15px 20px;
+    font-size: 1.5rem;
+}
+p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 950px) {
+    .page-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px auto auto auto auto;
+        grid-template-areas:
+            "header"
+                "image"
+                "text1"
+                "text2"
+                "button";
+    }
+    .title {
+        justify-content: center;
+    }
+    .image-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .img-profile {
+        height: auto;/*531px;*/
+        width: 100%;/*610px;*/
+        max-width: 610px;
+    }
+    p2 {
+        white-space: normal;
+    }
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
+import About from '../../pages/about/about';
 import Footer from '../Footer/Footer';
 
 class App extends React.Component {
@@ -47,7 +48,7 @@ class App extends React.Component {
                         </Route>
                         <Route exact path="/about">
                             <div className="main-content">
-                                About me!
+                                <About />
                             </div>
                         </Route>
                         <Route exact path="/projects">
