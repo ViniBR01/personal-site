@@ -1,10 +1,65 @@
 .page-wrapper-contact {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
     grid-template-areas:
-        "title";
+        "title title"
+        "social form";
     margin: 0 auto;
     max-width: 1050px;
 }
+.social-media-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "title title"
+        "linkedin github"
+        "facebook youtube";
+    grid-area: social;
+}
+.social-media-title {
+    grid-area: title;
+}
+.social-media-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.social-media-icon {
+    align-items: center;
+    background-color: black;
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+.message-form-wrap {
+    display: flex;
+    grid-area: form;
+    justify-content: flex-start;
+}
 
+@media screen and (max-width: 950px) {
+    .page-wrapper-contact {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "title"
+            "social"
+            "form";
+    }
+    .social-media-wrap {
+        align-items: center;
+        justify-content: center;
+    }
+    .message-form-wrap {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+}
