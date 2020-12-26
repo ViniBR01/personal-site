@@ -1,0 +1,13 @@
+.title-container {
+    display: flex;
+    justify-content: flex-start;
+    grid-area: title;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 950px) {
+    .title-container {
+        justify-content: center;
+    }
+}
