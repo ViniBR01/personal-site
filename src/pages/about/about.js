@@ -1,5 +1,5 @@
 import React from 'react';
-import './about.css'
+import './about.css';
 
 const PROFILE_IMAGE_PATH = '/assets/profile-pic-small.jpg'
 

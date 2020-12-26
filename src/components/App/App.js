@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
 import About from '../../pages/about/about';
+import Contact from '../../pages/contact/contact';
 import Footer from '../Footer/Footer';
 
 class App extends React.Component {
@@ -89,7 +90,7 @@ class App extends React.Component {
                         </Route>
                         <Route exact path="/contact">
                             <div className="main-content">
-                                Contact me!
+                                <Contact />
                             </div>
                         </Route>
                         <Route path="*">
