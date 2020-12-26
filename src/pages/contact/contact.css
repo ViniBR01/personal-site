@@ -1,0 +1,10 @@
+.page-wrapper-contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "title";
+    margin: 0 auto;
+    max-width: 1050px;
+}
+
