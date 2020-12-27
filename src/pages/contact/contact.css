@@ -9,39 +9,100 @@
     max-width: 1050px;
 }
 .social-media-wrap {
+    grid-area: social;
+    padding: 0 20px;
+}
+.social-media-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
         "title title"
         "linkedin github"
         "facebook youtube";
-    grid-area: social;
+    padding-right: 50px;
 }
 .social-media-title {
     grid-area: title;
+    margin-bottom: 20px;
 }
 .social-media-box {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 20px 0;
+}
+.contact-socialmedia-link {
+    text-decoration: none;
 }
 .social-media-icon {
     align-items: center;
     background-color: black;
-    border-radius: 30px;
+    border-radius: 60px;
     color: white;
     display: flex;
-    font-size: 30px;
+    font-size: 60px;
     justify-content: center;
     margin-top: 20px;
     padding: 10px;
 }
+@media screen and (max-width: 950px) {
+    .social-media-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "title title title title"
+            "linkedin github facebook youtube";
+        padding-right: 0;
+    }
+    .social-media-title {
+    }
+    .social-media-box {
+        margin: 20px 0;
+    }
+    .social-media-icon {
+        border-radius: 60px;
+        font-size: 60px;
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 680px) {
+    .social-media-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "title title"
+            "linkedin github"
+            "facebook youtube";
+    }
+    .social-media-title {
+    }
+}
+@media screen and (max-width: 430px) {
+    .social-media-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "title"
+            "linkedin"
+            "github"
+            "facebook"
+            "youtube";
+    }
+    .social-media-title {
+    }
+}
+
 .message-form-wrap {
-    display: flex;
     grid-area: form;
-    justify-content: flex-start;
+    padding: 0 20px;
+}
+.message-form-container {
+    width: 100%;
 }
 
 @media screen and (max-width: 950px) {
