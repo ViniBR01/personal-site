@@ -35,6 +35,10 @@
 }
 .contact-socialmedia-link {
     text-decoration: none;
+    color: black;
+}
+.contact-socialmedia-link:hover {
+    color: blue;
 }
 .social-media-icon {
     align-items: center;
