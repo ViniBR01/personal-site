@@ -49,11 +49,11 @@ const ContactForm = () => {
                 }}
             >
                 <Form>
-                    <label htmlFor="name">Name</label>
+                    <label htmlFor="name">Your Name</label>
                     <Field name="name" type="text" />
                     <ErrorMessage name="name" render={msg => <div className="form-error-message">{msg}</div>} />
                     
-                    <label htmlFor="email">E-mail Address</label>
+                    <label htmlFor="email">Your E-mail Address</label>
                     <Field name="email" type="email" />
                     <ErrorMessage name="email" render={msg => <div className="form-error-message">{msg}</div>} />
 
