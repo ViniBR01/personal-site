@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
 import About from '../../pages/about/about';
+import Projects from '../../pages/projects/projects';
 import Contact from '../../pages/contact/contact';
 import Footer from '../Footer/Footer';
 
@@ -56,20 +57,7 @@ class App extends React.Component {
                         </Route>
                         <Route exact path="/projects">
                             <div className="main-content">
-                                <h1>Projects</h1>
-                                <ul>
-                                    <li>PERFORM Emulation Platform</li>
-                                    <li>Internet Backlog estimation via RNNs</li>
-                                    <li>Personal Website</li>
-                                    <li>Network Model for music authorship estimator</li>
-                                    <li>Covid-19 seasonality project</li>
-                                    <li>Blog in Next.JS</li>
-                                    <li>Reliable File Transfer Protocol</li>
-                                    <li>Loteria! Mexican Game</li>
-                                    <li>Intra-Domain Routing Protocols</li>
-                                    <li>Analysis of Magma's Performance</li>
-                                </ul>
-                                
+                                <Projects />
                             </div>
                         </Route>
                         <Route exact path="/hobbies">
