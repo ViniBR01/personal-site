@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
+import Home from '../../pages/home/home';
 import About from '../../pages/about/about';
 import Projects from '../../pages/projects/projects';
 import Contact from '../../pages/contact/contact';
@@ -42,12 +43,7 @@ class App extends React.Component {
                     <Switch>                        
                         <Route exact path="/">
                             <div className="main-content">
-                                <h1>HELLO! I'm Vini</h1>
-                                <h3>Welcome to my website</h3>
-                                <p>I'm an engineer, researcher and developer.</p>
-                                <p>--------</p>
-                                <p>height: {this.state.height}px</p>
-                                <p>width: {this.state.width}px</p>
+                                <Home />
                             </div>
                         </Route>
                         <Route exact path="/about">
