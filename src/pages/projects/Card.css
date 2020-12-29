@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     padding: 20px;
-    width: 400px;
+    max-width: 440px;
 }
 .card-container {
     background-color: #f8f9fa;
@@ -17,14 +17,24 @@
     justify-content: flex-start;
     width: 100%;
 }
+.card-img-wrapper {
+    align-content: center;
+    display: flex;
+    height: 222px;
+    justify-content: center;
+}
 .card-img-container {
     align-content: center;
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 .card-img {
-    width: 192px;
+    border-radius: 90px;
+    margin: auto 0;
+    max-height: 192px;
+    width: auto;
+    max-width: 300px;
 }
 .card-body-container {
     align-content: center;
