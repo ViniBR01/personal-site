@@ -8,14 +8,14 @@ const projects = [
     },
     {
         title: 'WiFi Backlog Estimation via RNNs',
-        avatar: '/assets/projects/defaultAvatar.png',
+        avatar: '/assets/projects/rnns.png',
         text: 'Designed, trained and evaluated a Recurrent neural network model to estimate the backlog of stations at the WiFi AP in real-time.',
         badges: ['Machine Learning', '802.11', 'Python', 'TensorFlow'],
         link: '',
     },
     {
         title: 'Personal Website from Scratch in React',
-        avatar: '/assets/projects/defaultAvatar.png',
+        avatar: '/assets/projects/react-logo.png',
         text: "Create a fully responsive SPA to display personal portifolio. It's a mix of diverse design and implementation techniques and explore various possibilities of React and correlated libraries. The code is all available on my GitHub and can be used to build portifolio websites or other similar applications.",
         badges: ['Web', 'React', 'JavaScript', 'Single-page Application'],
         link: '',
@@ -36,7 +36,7 @@ const projects = [
     },
     {
         title: 'Blog in NextJS',
-        avatar: '/assets/projects/defaultAvatar.png',
+        avatar: '/assets/projects/next-logo.png',
         text: "Built a blog app to learn the basics of the Next.js framework. It includes page-based routing, pre-rendering on a per-page basis, automatic code-spliting, optimized prefetching, automated development environment, and more. Modified the original tutorial's layout and added new content.",
         badges: ['Web', 'NextJS', 'Markup Language', 'Server-side Rendering'],
         link: '',
@@ -49,8 +49,8 @@ const projects = [
         link: '',
     },
     {
-        title: 'Loteria! Mexican Card Game Online',
-        avatar: '/assets/projects/defaultAvatar.png',
+        title: 'Loteria! Mexican Card Game',
+        avatar: '/assets/projects/loteria.png',
         text: "Recreated an original 2019 Google doodle's version of the classical Mexican card game of luck. Currently offering a simple front-end to draw cards and play with freinds. Future plans include a server integration to add extra functionalities",
         badges: ['Web', 'HTML', 'CSS', 'JavaScript'],
         link: '',
@@ -64,7 +64,7 @@ const projects = [
     },
     {
         title: "Analysis of Magma's Performance",
-        avatar: '/assets/projects/defaultAvatar.png',
+        avatar: '/assets/projects/magma-logo.png',
         text: "Deployed and evaluated the perforamnce of Magma's Access Gateway (AGW) under variable traffic and computation resources.",
         badges: ['Infra-sctructure', 'Mobile','Python', 'Open-source'],
         link: '',
